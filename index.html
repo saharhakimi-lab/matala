@@ -76,12 +76,12 @@ body {
 
 .mono { font-family: 'JetBrains Mono', monospace; }
 
-/* ============ HEADER: מסך אתחול רשת ============ */
+/* ============ HEADER: מסך אתחול רשת (מוקטן) ============ */
 header {
   position: relative;
   background: linear-gradient(160deg, #fbf3e2 0%, #f7ecd6 55%, #f9efdb 100%);
   color: #b91c1c;
-  padding: 34px 20px 46px;
+  padding: 16px 20px 20px;
   text-align: center;
   overflow: hidden;
   border-bottom: 1px solid rgba(185, 28, 28, 0.22);
@@ -102,7 +102,7 @@ header::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 34px;
+  gap: 20px;
   max-width: 1300px;
   margin: 0 auto;
   flex-wrap: wrap-reverse;
@@ -110,14 +110,13 @@ header::before {
 
 .hero-image { flex-shrink: 0; }
 
-/* הגודל החדש והמוקטן של הלוגו */
 .hero-image img {
-  width: 250px; /* הוקטן משמעותית */
+  width: 90px;
   height: auto;
-  border-radius: 50%; /* שומר על המראה העגול */
+  border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #b91c1c;
-  box-shadow: 0 0 0 7px rgba(185, 28, 28, 0.12), 0 14px 30px -10px rgba(185, 28, 28, 0.35);
+  border: 3px solid #b91c1c;
+  box-shadow: 0 0 0 5px rgba(185, 28, 28, 0.12), 0 8px 20px -6px rgba(185, 28, 28, 0.35);
   background: #fff;
 }
 
@@ -133,20 +132,20 @@ header::before {
   justify-content: space-between;
   gap: 14px;
   max-width: 1300px;
-  margin: 0 auto 30px;
+  margin: 0 auto 12px;
   flex-wrap: wrap;
 }
 
 .nav-btn {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
-  padding: 10px 18px;
-  border-radius: 11px;
+  padding: 6px 14px;
+  border-radius: 9px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   cursor: pointer;
   border: none;
   transition: transform 0.18s ease, opacity 0.18s ease;
@@ -164,7 +163,7 @@ header::before {
 .nav-btn.solid {
   background: linear-gradient(120deg, #dc2626, #b91c1c);
   color: #fff5f0;
-  box-shadow: 0 8px 22px -6px rgba(185, 28, 28, 0.5);
+  box-shadow: 0 6px 16px -4px rgba(185, 28, 28, 0.5);
 }
 
 .statusbar {
@@ -172,21 +171,21 @@ header::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 12.5px;
+  font-size: 11px;
   letter-spacing: 0.4px;
   color: #b45309;
-  margin-bottom: 22px;
+  margin-bottom: 8px;
   flex-wrap: wrap;
 }
 
 .statusbar .dot {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: #b91c1c;
-  box-shadow: 0 0 0 4px rgba(185, 28, 28, 0.2);
+  box-shadow: 0 0 0 3px rgba(185, 28, 28, 0.2);
   animation: pulse 1.8s ease-in-out infinite;
 }
 
@@ -198,20 +197,20 @@ header::before {
   backdrop-filter: blur(10px);
   color: #b91c1c;
   font-weight: 800;
-  padding: 7px 20px;
-  border-radius: 30px;
-  font-size: 14px;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 12px;
   display: inline-block;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
   border: 1px solid rgba(185, 28, 28, 0.35);
   letter-spacing: 0.4px;
 }
 
 h1 {
   position: relative;
-  margin: 8px 0 6px;
+  margin: 4px 0 2px;
   font-family: 'Rubik', 'Assistant', sans-serif;
-  font-size: 42px;
+  font-size: 26px;
   font-weight: 900;
   letter-spacing: -0.5px;
   color: #b91c1c;
@@ -219,17 +218,17 @@ h1 {
 
 header p.subtitle {
   position: relative;
-  margin: 4px 0 26px;
+  margin: 2px 0 0;
   color: #c2410c;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 /* ============ מבנה כללי ============ */
 .container {
   width: 92%;
   max-width: 1300px;
-  margin: 44px auto;
+  margin: 24px auto;
 }
 
 .panel {
@@ -413,17 +412,17 @@ header p.subtitle {
 
 .darkBtn:hover { transform: scale(1.1); }
 
-/* ============ עוזר הפרויקט הצף: צומת עוזר ============ */
+/* ============ עוזר הפרויקט הצף: צומת עוזר (מוקטן וקומפקטי) ============ */
 .bot-widget {
   position: fixed;
-  bottom: 22px;
-  left: 22px;
-  width: 296px;
+  bottom: 16px;
+  left: 16px;
+  width: 240px; /* הוקטן מ-296px */
   background: var(--card);
   color: var(--text);
-  border-radius: 18px;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.28);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.24);
   z-index: 9999;
   animation: floatBot 4s ease-in-out infinite;
   border: 1px solid var(--panel-border);
@@ -432,75 +431,76 @@ header p.subtitle {
 .bot-header {
   background: linear-gradient(135deg, #0b2540, #062a2e);
   color: #eaf6fb;
-  padding: 13px 16px;
+  padding: 9px 12px;
   font-weight: 800;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 12.5px;
+  font-size: 11px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   letter-spacing: 0.3px;
 }
 
 .bot-header .dot {
-  width: 7px; height: 7px; border-radius: 50%;
+  width: 6px; height: 6px; border-radius: 50%;
   background: #34d399;
-  box-shadow: 0 0 0 3px rgba(52,211,153,0.25);
+  box-shadow: 0 0 0 2px rgba(52,211,153,0.25);
   animation: pulse 1.8s ease-in-out infinite;
   flex-shrink: 0;
 }
 
-.bot-body { padding: 18px; }
+.bot-body { padding: 12px; } /* ריווח פנימי מוקטן */
 
 .bot-avatar {
-  width: 84px;
-  height: 84px;
+  width: 54px; /* הוקטן משמעותית מ-84px */
+  height: 54px;
   border-radius: 50%;
   display: block;
-  margin: 0 auto 12px auto;
+  margin: 0 auto 8px auto;
   object-fit: cover;
-  border: 3px solid var(--cyan);
-  box-shadow: 0 0 0 5px var(--cyan-soft);
+  border: 2px solid var(--cyan);
+  box-shadow: 0 0 0 3px var(--cyan-soft);
 }
 
 .bot-body p.greet {
-  margin: 0 0 10px 0;
+  margin: 0 0 4px 0;
   font-weight: 800;
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .bot-body .lead {
   font-weight: 600;
-  font-size: 12.5px;
+  font-size: 11px;
   text-align: center;
   color: var(--text-muted);
-  margin: 0 0 12px;
+  margin: 0 0 8px;
+  line-height: 1.4;
 }
 
-.bot-chips { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-bottom: 14px; }
+.bot-chips { display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; margin-bottom: 10px; }
 
 .bot-chip {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10.5px;
+  font-size: 9.5px;
   font-weight: 600;
   color: var(--text-muted);
   background: var(--bg);
   border: 1px solid var(--panel-border);
-  padding: 4px 9px;
-  border-radius: 6px;
+  padding: 3px 6px;
+  border-radius: 5px;
 }
 
 .bot-btn {
   display: block;
   text-align: center;
-  padding: 12px;
+  padding: 8px;
   background: var(--green);
   color: #06231a;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 8px;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'JetBrains Mono', monospace;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -522,7 +522,7 @@ footer {
 
 @keyframes floatBot {
   0% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+  50% { transform: translateY(-6px); }
   100% { transform: translateY(0); }
 }
 
@@ -532,11 +532,11 @@ footer {
 }
 
 @media (max-width: 640px) {
-  h1 { font-size: 30px; }
-  .bot-widget { width: 260px; left: 14px; bottom: 14px; }
+  h1 { font-size: 22px; }
+  .bot-widget { width: 220px; left: 10px; bottom: 10px; }
   .darkBtn { top: 14px; left: 14px; }
   .panel { padding: 22px 18px; }
-  .hero-image img { width: 110px; height: 110px; }
+  .hero-image img { width: 70px; height: 70px; }
 }
 </style>
 </head>
@@ -702,7 +702,7 @@ footer {
 
 </div>
 
-<!-- 🤖 צומת העוזר -->
+<!-- 🤖 צומת העוזר (מוקטן וקומפקטי) -->
 <div class="bot-widget">
     <div class="bot-header">
         <span class="dot"></span> NODE: DAN-GPT // ONLINE
@@ -712,7 +712,7 @@ footer {
         <img class="bot-avatar" src="https://lh3.googleusercontent.com/d/1fzqv93VKIW_VT8-e1HdJxBmbU2sFnwlb" alt="דן GPT עוזר הפרויקט">
 
         <p class="greet">שלום תלמיד יקר 👋</p>
-        <p class="lead">אני דן GPT, המלווה האישי שלך! תקוע בשלב מסוים? שאל אותי על:</p>
+        <p class="lead">אני דן GPT, המלווה שלך! שאל אותي על:</p>
 
         <div class="bot-chips">
             <span class="bot-chip">Packet Tracer</span>
@@ -783,7 +783,7 @@ window.onload = function() {
     document.getElementById("studentName").value = localStorage.getItem("student_name");
   }
   if(localStorage.getItem("student_project")) {
-    document.getElementById("projectSelect").value = localStorage.getItem("student_project");
+    document.getElementById("projectSelect5").value = localStorage.getItem("student_project");
   }
   if(localStorage.getItem("student_desc")) {
     document.getElementById("projectDesc").value = localStorage.getItem("student_desc");
